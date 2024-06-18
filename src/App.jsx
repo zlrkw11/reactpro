@@ -4,6 +4,7 @@ function App() {
   return (
     <div className="App">
       <Hello name="ZL" message="Wind" />
+      <Hello name="Ray" message="Hi" />
     </div>
   );
 }
