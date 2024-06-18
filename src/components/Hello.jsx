@@ -4,10 +4,10 @@ function displayMessage() {
   return "Wow!";
 }
 
-function Hello({ name, message }) {
+function Hello({ name, message, emoji }) {
   return (
     <h1>
-      {message} {name}
+      {message} {name} {emoji}
     </h1>
   );
 }
