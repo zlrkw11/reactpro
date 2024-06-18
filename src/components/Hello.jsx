@@ -6,7 +6,11 @@ function displayMessage() {
 
 function Hello(props) {
   console.log(props);
-  return <h1>Hello {props.name}</h1>;
+  return (
+    <h1>
+      {props.message} {props.name}
+    </h1>
+  );
 }
 
 export default Hello;
