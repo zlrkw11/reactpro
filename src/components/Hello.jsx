@@ -4,10 +4,13 @@ function displayMessage() {
   return "Wow!";
 }
 
-function Hello({ name, message, emoji, seatNumber }) {
+function Hello(props) {
   return (
     <h1>
-      {name} {message} {emoji} {seatNumber}
+      {props.person.name}
+      {props.person.message}
+      {props.person.food}
+      {props.person.seatNumbers}
     </h1>
   );
 }
