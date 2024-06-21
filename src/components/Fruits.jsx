@@ -3,7 +3,7 @@ export default function Fruits() {
   return (
     <div>
       {fruits.map((fruit) => (
-        <h1>{fruit}</h1>
+        <li key={fruit}>{fruit}</li>
       ))}
     </div>
   );
