@@ -4,13 +4,13 @@ function displayMessage() {
   return "Wow!";
 }
 
-function Hello(props) {
+function Hello({ person }) {
   return (
     <h1>
-      {props.person.name}
-      {props.person.message}
-      {props.person.food}
-      {props.person.seatNumbers}
+      {person.name}
+      {person.message}
+      {person.food}
+      {person.seatNumbers}
     </h1>
   );
 }
