@@ -1,17 +1,10 @@
 import Hello from "./components/Hello";
+import Fruits from "./components/Fruits";
 
 function App() {
-  const seatNumbers = [1, 4, 7];
-  const person = {
-    name: "Ray",
-    message: "Hi",
-    food: "noodles",
-    seatNumbers: [1, 1, 1],
-  };
-
   return (
     <div className="App">
-      <Hello person={person} />
+      <Fruits />
     </div>
   );
 }
