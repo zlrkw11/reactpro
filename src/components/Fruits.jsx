@@ -31,7 +31,11 @@ export default function Fruits() {
   return (
     <div>
       {fruits.map((fruit) => (
-        <Fruit />
+        <Fruit
+          name={fruit.name}
+          price={fruit.price}
+          sweetness={fruit.sweetness}
+        />
       ))}
     </div>
     /*     <div>
