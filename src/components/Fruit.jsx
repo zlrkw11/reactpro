@@ -1,7 +1,7 @@
 export default function Fruit({ name, price, sweetness }) {
   return (
-    <div>
+    <li>
       The fruit is {name} and it's ${price}, with {sweetness} sugar amount
-    </div>
+    </li>
   );
 }

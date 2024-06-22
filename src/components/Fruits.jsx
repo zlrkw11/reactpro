@@ -32,6 +32,7 @@ export default function Fruits() {
     <div>
       {fruits.map((fruit) => (
         <Fruit
+          key={fruit.name}
           name={fruit.name}
           price={fruit.price}
           sweetness={fruit.sweetness}
