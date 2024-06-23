@@ -1,6 +1,6 @@
 export default function Fruit({ name, price, sweetness }) {
   return (
-    <li>
+    <div>
       {/* The fruit is {name} and it's ${price}, with {sweetness} sugar amount */}
       {price > 10 ? (
         <h3>
@@ -9,6 +9,6 @@ export default function Fruit({ name, price, sweetness }) {
       ) : (
         ""
       )}
-    </li>
+    </div>
   );
 }
