@@ -5,7 +5,7 @@ import Cars from "./components/Cars";
 function App() {
   return (
     <div className="App">
-      <Cars />
+      <Fruits />
     </div>
   );
 }
