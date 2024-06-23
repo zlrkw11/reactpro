@@ -2,10 +2,14 @@ import Civic from "./Civic";
 import Lancer from "./Lancer";
 
 export default function Cars() {
-  const display = false;
+  let Car1 = <h1>Car1</h1>;
+  let Car2 = <h1>Car2</h1>;
+  let Car;
+  const display = true;
   if (display) {
-    return <Civic />;
+    Car = Car1;
   } else {
-    return <Lancer />;
+    Car = Car2;
   }
+  return Car;
 }
