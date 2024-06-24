@@ -6,26 +6,31 @@ export default function Fruits() {
       name: "Apple",
       price: 10,
       sweetness: "medium",
+      soldout: false,
     },
     {
       name: "Mango",
       price: 25,
       sweetness: "high",
+      soldout: false,
     },
     {
       name: "Banana",
       price: 5,
       sweetness: "high",
+      soldout: true,
     },
     {
       name: "Orange",
       price: 15,
       sweetness: "medium",
+      soldout: false,
     },
     {
       name: "Pineapple",
       price: 15,
       sweetness: "low",
+      soldout: true,
     },
   ];
   return (
