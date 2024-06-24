@@ -41,6 +41,7 @@ export default function Fruits() {
           name={fruit.name}
           price={fruit.price}
           sweetness={fruit.sweetness}
+          soldout={fruit.soldout}
         />
       ))}
     </div>
