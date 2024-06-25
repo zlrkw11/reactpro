@@ -16,6 +16,10 @@ export default function Counter() {
     setIncrementBy(incrementBy + 1);
   }
 
+  function decreaseIncrement() {
+    setIncrementBy(incrementBy - 1);
+  }
+
   return (
     <div>
       <h1>Count value: {count}</h1>
@@ -25,6 +29,7 @@ export default function Counter() {
 
       <h1>We are incrementing / decrementing the value by: {incrementBy}</h1>
       <button onClick={increaseIncrement}>Increase Increment</button>
+      <button onClick={decreaseIncrement}>Decrease Increment</button>
     </div>
   );
 }
