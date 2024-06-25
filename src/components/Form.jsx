@@ -1,3 +1,12 @@
 export default function Form() {
-  return <div>Form</div>;
+  function handleChange() {
+    console.log("Change occured");
+  }
+  return (
+    <div>
+      <form>
+        <input onChange={handleChange} type="text" value="Name"></input>
+      </form>
+    </div>
+  );
 }
