@@ -2,14 +2,20 @@ import { useState } from "react";
 
 export default function Form() {
   const [name, setName] = useState("");
-  function handleChange() {
-    console.log("Change occured");
+  function handleChange(e) {
+    console.log(e.target.value);
   }
 
   return (
     <div>
       <form>
-        <input onChange={handleChange} type="text" value={name}></input>
+        <input
+          onChange={function demo(e) {
+            return handleChange(e);
+          }}
+          type="text"
+          value={name}
+        ></input>
       </form>
     </div>
   );
