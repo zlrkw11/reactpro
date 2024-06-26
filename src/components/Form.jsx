@@ -8,7 +8,7 @@ export default function Form() {
       <form>
         <input
           onChange={(e) => {
-            setName({ firstName: e.target.value });
+            setName({ firstName: e.target.value, lastName: "" });
           }}
           type="text"
           value={name.firstName}
@@ -16,10 +16,10 @@ export default function Form() {
 
         <input
           onChange={(e) => {
-            setName({ firstName: e.target.value });
+            setName({ firstName: "", lastName: e.target.value });
           }}
           type="text"
-          value={name.firstName}
+          value={name.lastName}
         ></input>
       </form>
     </div>
