@@ -4,6 +4,7 @@ export default function Form() {
   const [name, setName] = useState({ firstName: "", lastName: "" });
   function handleSubmit(e) {
     e.preventDefault();
+    console.log(name);
   }
 
   return (
